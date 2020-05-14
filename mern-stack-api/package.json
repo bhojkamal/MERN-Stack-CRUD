@@ -1,17 +1,23 @@
 {
   "name": "mern-stack-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "nodejs body-parser cors express mongoose crud api",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Bhoj Kamal Kunwar",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.8.11"
-  }
+    "mongoose": "^5.9.13"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongoose"
+  ]
 }

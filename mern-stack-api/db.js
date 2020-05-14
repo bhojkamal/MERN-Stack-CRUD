@@ -1,9 +1,14 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-mongoose.connect('mongodb://localhost:27017/postManagerDB',{useNewUrlParser:true,useUnifiedTopology:true},
-    err => {
-        if (!err)
-            console.log('Mongodb connection succeeded.')
-        else
-            console.log('Error while connecting MongoDB : ' + JSON.stringify(err, undefined, 2))
-    })
+require("dotenv").config();
+mongoose.connect(
+  process.env.MONGODB_URL,
+  { useNewUrlParser: true, useUnifiedTopology: true },
+  (err) => {
+    if (!err) console.log("Mongodb connection succeeded.");
+    else
+      console.log(
+        "Error while connecting MongoDB : " + JSON.stringify(err, undefined, 2)
+      );
+  }
+);
